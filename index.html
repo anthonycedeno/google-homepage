@@ -1,0 +1,74 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <style>
+            .container {
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .column {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .menu {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .nav-left {
+                display: flex;
+                flex-direction: row;
+            }
+            .sign-in-button {
+                background-color:cornflowerblue;
+                color: white;
+            }
+            .footer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: lightgray;
+            }
+        </style>
+        <nav class="menu">
+            <div class="left-nav">
+                <a>About</a>
+                <a>Store</a>
+            </div>
+            <div class="right-nav">
+                <a>Gmail</a>
+                <a>images</a>
+                <button class="sign-in-button">Sign In</button>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="column">
+                <div class="search-panel">
+                    <img src="googlelogo_color_272x92dp.png" alt="google logo">
+                </div>
+                <div class="search-panel">
+                    <input type="text" placeholder="Search Google">
+                    <button>Search</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="left-footer">
+                <a>Advertising</a>
+                <a>Business</a>
+                <a>How Search works</a>
+            </div>
+            <div class="right-footer">
+                <a>Privacy</a>
+                <a>Terms</a>
+                <a>Settings</a>
+            </div>
+        </footer>
+    </body>
+</html>
