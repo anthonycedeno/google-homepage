@@ -4,71 +4,119 @@
     </head>
     <body>
         <style>
+            .absolute-container {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
             .container {
-                min-height: 100vh;
+                flex: 1;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items: stretch;
             }
             .column {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                width: 50%;
             }
             .menu {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-            }
-            .nav-left {
-                display: flex;
-                flex-direction: row;
+                padding: 5px 10px;
+                align-items: center;
             }
             .sign-in-button {
-                background-color:cornflowerblue;
+                background-color: rgb(66, 133, 244);
                 color: white;
+                border-radius: 5px;
+                padding: 5px 15px;
             }
             .footer {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 background-color: lightgray;
+                padding: 10px;
+            }
+            .search-panel {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: stretch;
+                width: 70%;
+                height: 50%;
+            }
+            .button-row {
+                display: flex;
+                flex-direction: row;
+                margin-top: 20PX;
+                justify-content: center;
+            }
+            .button {
+                border-radius: 5px;
+                background-color: rgb(238, 238, 238);
+                color:rgb(104, 104, 104);
+                margin: 0% 2%;
+                padding: 2%;
+            }
+            a {
+                margin: 10px;
+            }
+            input {
+                border-radius: 25px;
+                width: auto;
+                height: 14%;
+            }
+            body {
+                height: 100%; 
+                margin: 0px;
+                padding: 0px;
+            }
+            img {
+                width: 60%;
+                align-self: center;
             }
         </style>
-        <nav class="menu">
-            <div class="left-nav">
-                <a>About</a>
-                <a>Store</a>
-            </div>
-            <div class="right-nav">
-                <a>Gmail</a>
-                <a>images</a>
-                <button class="sign-in-button">Sign In</button>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="column">
-                <div class="search-panel">
-                    <img src="googlelogo_color_272x92dp.png" alt="google logo">
+            <div class="absolute-container">
+                <nav class="menu">
+                    <div class="left-nav">
+                        <a>About</a>
+                        <a>Store</a>
+                    </div>
+                    <div class="right-nav">
+                        <a>Gmail</a>
+                        <a>Images</a>
+                        <button class="sign-in-button">Sign In</button>
+                    </div>
+                </nav>
+                <div class="container">
+                    <div class="column">
+                        <div class="search-panel">
+                            <img src="googlelogo_color_272x92dp.png" alt="google logo">
+                            <input type="text" placeholder=" &#128269">
+                            <div class="button-row">
+                                <button class="button">Google Search</button>
+                                <button class="button">I'm Feeling Lucky</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="search-panel">
-                    <input type="text" placeholder="Search Google">
-                    <button>Search</button>
-                </div>
+                <footer class="footer">
+                    <div class="left-footer">
+                        <a>Advertising</a>
+                        <a>Business</a>
+                        <a>How Search works</a>
+                    </div>
+                    <div class="right-footer">
+                        <a>Privacy</a>
+                        <a>Terms</a>
+                        <a>Settings</a>
+                    </div>
+                </footer>
             </div>
-        </div>
-        <footer class="footer">
-            <div class="left-footer">
-                <a>Advertising</a>
-                <a>Business</a>
-                <a>How Search works</a>
-            </div>
-            <div class="right-footer">
-                <a>Privacy</a>
-                <a>Terms</a>
-                <a>Settings</a>
-            </div>
-        </footer>
     </body>
 </html>
